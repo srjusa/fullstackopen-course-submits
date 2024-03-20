@@ -1,0 +1,8 @@
+Mitä tapahtuu käyttäjän luodessa uutta muistiinpanoa:
+
+1. Käyttäjä kirjoittaa uuden muistiinpanon tekstikenttään ja painaa tallennusnappia.
+2. Selain lähettää POST-pyynnön osoitteeseen https://studies.cs.helsinki.fi/exampleapp/new_note, joka sisältää uuden muistiinpanon tiedot.
+3. Palvelin vastaanottaa POST-pyynnön uuden muistiinpanon tiedoilla.
+4. Palvelin tallentaa uuden muistiinpanon tiedot tietokantaan.
+5. Tietokanta vahvistaa muistiinpanon tietojen tallennuksen.
+6. Palvelin palauttaa selaimelle ohjauksen (302 Redirect) osoitteeseen /exampleapp/notes, jolloin selain siirtyy takaisin muistiinpanojen sivulle.
